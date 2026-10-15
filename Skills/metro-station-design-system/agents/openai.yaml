@@ -1,0 +1,6 @@
+interface:
+  display_name: "Metro Station Design System"
+  short_description: "Default SwiftUI iPhone design, adapted to each app"
+  default_prompt: "Use $metro-station-design-system as the foundation for this SwiftUI iPhone app, adapting its instruments, controls and visualizers to the app's domain."
+policy:
+  allow_implicit_invocation: true

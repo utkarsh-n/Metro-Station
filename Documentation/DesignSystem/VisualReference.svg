@@ -1,0 +1,415 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1900" viewBox="0 0 1200 1900" role="img" aria-labelledby="atlas-title atlas-description">
+<title id="atlas-title">Metro Station — SwiftUI design system visual reference</title>
+<desc id="atlas-description">Editable static vector atlas of canonical colors, content, metal and native glass material families, independent drawing and readout layers, and compact interaction contracts. Every glass illustration is schematic rather than a native Liquid Glass rendering.</desc>
+<metadata>{"baseline":{"appBuild":14,"platform":"iPhone iOS 27","swift":"6","date":"2026-10-12"},"colorEncoding":"RGB doubles are canonical; hex is nearest 8-bit sRGB approximation. Native material pixels depend on OS and backdrop.","colors":{"surface.canvas":{"rgb":[0.025,0.042,0.058],"hexApprox":"#060B0F","colorSpace":"sRGB","role":"App environment","basis":"current","source":"MetroStationTheme.swift:4"},"surface.content":{"rgb":[0.045,0.07,0.087],"hexApprox":"#0B1216","colorSpace":"sRGB","role":"Content panel","basis":"current","source":"MetroStationTheme.swift:5"},"surface.gaugeHousing":{"rgb":[0.027,0.041,0.055],"hexApprox":"#070A0E","colorSpace":"sRGB","role":"Opaque gauge housing","basis":"current","source":"GaugeView.swift:72"},"surface.metalLight":{"rgb":[0.055,0.073,0.09],"hexApprox":"#0E1317","colorSpace":"sRGB","role":"Upper dial metal","basis":"current","source":"GaugeView.swift:84"},"surface.metalDark":{"rgb":[0.021,0.032,0.042],"hexApprox":"#05080B","colorSpace":"sRGB","role":"Lower dial metal","basis":"current","source":"GaugeView.swift:84"},"surface.pillLight":{"rgb":[0.055,0.069,0.095],"hexApprox":"#0E1218","colorSpace":"sRGB","role":"Leading enclosure gradient stop","basis":"current","source":"MetroStationPillView.swift:97"},"surface.pillDark":{"rgb":[0.014,0.022,0.037],"hexApprox":"#040609","colorSpace":"sRGB","role":"Trailing enclosure gradient stop","basis":"current","source":"MetroStationPillView.swift:98"},"surface.plot":{"rgb":[0.022,0.036,0.047],"hexApprox":"#06090C","colorSpace":"sRGB","role":"Large plot inset","basis":"current","source":"SignalScopeView.swift:83"},"accent.actionCyan":{"rgb":[0.34,0.93,0.96],"hexApprox":"#57EDF5","colorSpace":"sRGB","role":"General actions and selection","basis":"current","source":"MetroStationTheme.swift:6"},"accent.actionAmber":{"rgb":[1,0.74,0.37],"hexApprox":"#FFBD5E","colorSpace":"sRGB","role":"Running primary action and emphasis","basis":"current","source":"MetroStationTheme.swift:7"},"accent.instrumentCyan":{"rgb":[0.32,0.91,0.96],"hexApprox":"#52E8F5","colorSpace":"sRGB","role":"Dial, crown and large waveform ink","basis":"current","source":"GaugeView.swift:32"},"accent.instrumentAmber":{"rgb":[1,0.72,0.31],"hexApprox":"#FFB84F","colorSpace":"sRGB","role":"Dial, crown and large carrier ink","basis":"current","source":"GaugeView.swift:33"},"text.display":{"rgb":[0.91,0.95,0.97],"hexApprox":"#E8F2F7","colorSpace":"sRGB","role":"Primary numeric ink","basis":"current","source":"GaugeView.swift:122"},"text.secondary":{"rgb":[0.6,0.69,0.73],"hexApprox":"#99B0BA","colorSpace":"sRGB","role":"Secondary engineering text","basis":"current","source":"MetroStationTheme.swift:8"},"signal.wavePrimary":{"rgb":[0.31,0.86,1],"hexApprox":"#4FDBFF","colorSpace":"sRGB","role":"Compact waveform ink","basis":"current","source":"MetroStationPillView.swift:23"},"signal.waveSecondary":{"rgb":[0.21,0.4,1],"hexApprox":"#3666FF","colorSpace":"sRGB","role":"Compact waveform depth","basis":"current","source":"MetroStationPillView.swift:28"},"signal.spectrumPrimary":{"rgb":[0.76,0.57,1],"hexApprox":"#C291FF","colorSpace":"sRGB","role":"Compact spectrum ink","basis":"current","source":"MetroStationPillView.swift:24"},"signal.spectrumSecondary":{"rgb":[0.96,0.36,0.84],"hexApprox":"#F55CD6","colorSpace":"sRGB","role":"Compact spectrum depth","basis":"current","source":"MetroStationPillView.swift:29"},"signal.carrier":{"rgb":[1,0.73,0.34],"hexApprox":"#FFBA57","colorSpace":"sRGB","role":"Compact carrier marker","basis":"current","source":"MetroStationPillView.swift:20"},"metal.crownBase":{"rgb":[0.12,0.15,0.17],"hexApprox":"#1F262B","colorSpace":"sRGB","role":"Crown metal base","basis":"current","source":"TempoCrownsView.swift"},"metal.crownRimLight":{"rgb":[0.49,0.57,0.61],"hexApprox":"#7D919C","colorSpace":"sRGB","role":"Upper crown rim","basis":"current","source":"TempoCrownsView.swift"},"metal.crownRimDark":{"rgb":[0.1,0.13,0.15],"hexApprox":"#1A2126","colorSpace":"sRGB","role":"Lower crown rim","basis":"current","source":"TempoCrownsView.swift"},"metal.crownRimMid":{"rgb":[0.32,0.39,0.43],"hexApprox":"#52636E","colorSpace":"sRGB","role":"Crown rim midpoint","basis":"current","source":"TempoCrownsView.swift"},"metal.crownFaceLight":{"rgb":[0.27,0.33,0.37],"hexApprox":"#45545E","colorSpace":"sRGB","role":"Crown face upper","basis":"current","source":"TempoCrownsView.swift"},"metal.crownFaceDark":{"rgb":[0.08,0.11,0.13],"hexApprox":"#141C21","colorSpace":"sRGB","role":"Crown face lower","basis":"current","source":"TempoCrownsView.swift"}},"illustrationPolicy":"Schematic static vector reference; not native rendering or runtime proof."}</metadata>
+<defs>
+<pattern id="engineering-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 L 0 0 0 28" fill="none" stroke="#FFFFFF" stroke-opacity="0.025" stroke-width="0.5" /></pattern>
+<radialGradient id="ambient" cx="90%" cy="0%" r="85%"><stop offset="0" stop-color="#57EDF5" stop-opacity="0.085" /><stop offset="0.72" stop-color="#57EDF5" stop-opacity="0" /></radialGradient>
+<linearGradient id="metal-rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7D919C" /><stop offset="0.50" stop-color="#1A2126" /><stop offset="1" stop-color="#52636E" /></linearGradient>
+<linearGradient id="metal-face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#45545E" /><stop offset="1" stop-color="#141C21" /></linearGradient>
+<linearGradient id="lens-schematic" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10" /><stop offset="0.50" stop-color="#FFFFFF" stop-opacity="0.015" /><stop offset="1" stop-color="#52E8F5" stop-opacity="0.04" /></linearGradient>
+<linearGradient id="edge-light" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0" /><stop offset="0.50" stop-color="#FFFFFF" stop-opacity="0.2" /><stop offset="1" stop-color="#FFFFFF" stop-opacity="0" /></linearGradient>
+<marker id="up-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#99B0BA" /></marker>
+</defs>
+<rect width="1200" height="1900" fill="#060B0F" />
+<rect width="1200" height="1900" fill="url(#ambient)" />
+<rect width="1200" height="1900" fill="url(#engineering-grid)" />
+<g id="header">
+<path d="M64 82h8l5-16 7 32 6-40 7 45 6-27 6 12h13" fill="none" stroke="#57EDF5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="143" y="95" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="38" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Metro Station</text>
+<text x="64" y="133" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">SwiftUI design system · A calibrated visual vocabulary for native instruments</text>
+<text x="1136" y="78" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="500" fill="#99B0BA" text-anchor="end" letter-spacing="1.5">VISUAL REFERENCE</text>
+<text x="1136" y="101" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="end" letter-spacing="0">BUILD 14 / EDITION 1.0</text>
+<line x1="64" y1="157" x2="1136" y2="157" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
+</g>
+<text x="64" y="194" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="500" fill="#57EDF5" text-anchor="start" letter-spacing="1.4">01 / CANONICAL COLOR TOKENS</text>
+<line x1="64" y1="209" x2="1136" y2="209" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+<g id="swatch-surface-canvas" data-token="surface.canvas">
+<rect x="64.0" y="223" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="77.0" y="236" width="32" height="32" rx="7" fill="rgb(2.5%,4.2%,5.8%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="119.0" y="247" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Canvas</text>
+<text x="119.0" y="267" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#060B0F</text>
+<text x="77.0" y="290" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.025 / 0.042 / 0.058</text>
+</g>
+<g id="swatch-surface-content" data-token="surface.content">
+<rect x="280.8" y="223" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="293.8" y="236" width="32" height="32" rx="7" fill="rgb(4.5%,7%,8.7%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="335.8" y="247" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Content panel</text>
+<text x="335.8" y="267" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#0B1216</text>
+<text x="293.8" y="290" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.045 / 0.070 / 0.087</text>
+</g>
+<g id="swatch-surface-gaugeHousing" data-token="surface.gaugeHousing">
+<rect x="497.6" y="223" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="510.6" y="236" width="32" height="32" rx="7" fill="rgb(2.7%,4.1%,5.5%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="552.6" y="247" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Gauge housing</text>
+<text x="552.6" y="267" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#070A0E</text>
+<text x="510.6" y="290" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.027 / 0.041 / 0.055</text>
+</g>
+<g id="swatch-surface-metalLight" data-token="surface.metalLight">
+<rect x="714.4000000000001" y="223" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="727.4000000000001" y="236" width="32" height="32" rx="7" fill="rgb(5.5%,7.3%,9%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="769.4000000000001" y="247" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Metal light</text>
+<text x="769.4000000000001" y="267" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#0E1317</text>
+<text x="727.4000000000001" y="290" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.055 / 0.073 / 0.090</text>
+</g>
+<g id="swatch-surface-metalDark" data-token="surface.metalDark">
+<rect x="931.2" y="223" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="944.2" y="236" width="32" height="32" rx="7" fill="rgb(2.1%,3.2%,4.2%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="986.2" y="247" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Metal dark</text>
+<text x="986.2" y="267" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#05080B</text>
+<text x="944.2" y="290" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.021 / 0.032 / 0.042</text>
+</g>
+<g id="swatch-surface-plot" data-token="surface.plot">
+<rect x="64.0" y="317" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="77.0" y="330" width="32" height="32" rx="7" fill="rgb(2.2%,3.6%,4.7%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="119.0" y="341" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Plot inset</text>
+<text x="119.0" y="361" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#06090C</text>
+<text x="77.0" y="384" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.022 / 0.036 / 0.047</text>
+</g>
+<g id="swatch-surface-pillLight" data-token="surface.pillLight">
+<rect x="280.8" y="317" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="293.8" y="330" width="32" height="32" rx="7" fill="rgb(5.5%,6.9%,9.5%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="335.8" y="341" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Pill / leading stop</text>
+<text x="335.8" y="361" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#0E1218</text>
+<text x="293.8" y="384" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.055 / 0.069 / 0.095</text>
+</g>
+<g id="swatch-surface-pillDark" data-token="surface.pillDark">
+<rect x="497.6" y="317" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="510.6" y="330" width="32" height="32" rx="7" fill="rgb(1.4%,2.2%,3.7%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="552.6" y="341" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Pill / trailing stop</text>
+<text x="552.6" y="361" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#040609</text>
+<text x="510.6" y="384" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.014 / 0.022 / 0.037</text>
+</g>
+<g id="swatch-text-display" data-token="text.display">
+<rect x="714.4000000000001" y="317" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="727.4000000000001" y="330" width="32" height="32" rx="7" fill="rgb(91%,95%,97%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="769.4000000000001" y="341" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Display ink</text>
+<text x="769.4000000000001" y="361" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#E8F2F7</text>
+<text x="727.4000000000001" y="384" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.910 / 0.950 / 0.970</text>
+</g>
+<g id="swatch-text-secondary" data-token="text.secondary">
+<rect x="931.2" y="317" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="944.2" y="330" width="32" height="32" rx="7" fill="rgb(60%,69%,73%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="986.2" y="341" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Secondary ink</text>
+<text x="986.2" y="361" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#99B0BA</text>
+<text x="944.2" y="384" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.600 / 0.690 / 0.730</text>
+</g>
+<g id="swatch-accent-actionCyan" data-token="accent.actionCyan">
+<rect x="64.0" y="411" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="77.0" y="424" width="32" height="32" rx="7" fill="rgb(34%,93%,96%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="119.0" y="435" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Action cyan</text>
+<text x="119.0" y="455" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#57EDF5</text>
+<text x="77.0" y="478" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.340 / 0.930 / 0.960</text>
+</g>
+<g id="swatch-accent-actionAmber" data-token="accent.actionAmber">
+<rect x="280.8" y="411" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="293.8" y="424" width="32" height="32" rx="7" fill="rgb(100%,74%,37%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="335.8" y="435" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Action amber</text>
+<text x="335.8" y="455" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#FFBD5E</text>
+<text x="293.8" y="478" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">1.000 / 0.740 / 0.370</text>
+</g>
+<g id="swatch-accent-instrumentCyan" data-token="accent.instrumentCyan">
+<rect x="497.6" y="411" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="510.6" y="424" width="32" height="32" rx="7" fill="rgb(32%,91%,96%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="552.6" y="435" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Instrument cyan</text>
+<text x="552.6" y="455" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#52E8F5</text>
+<text x="510.6" y="478" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.320 / 0.910 / 0.960</text>
+</g>
+<g id="swatch-accent-instrumentAmber" data-token="accent.instrumentAmber">
+<rect x="714.4000000000001" y="411" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="727.4000000000001" y="424" width="32" height="32" rx="7" fill="rgb(100%,72%,31%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="769.4000000000001" y="435" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Instrument amber</text>
+<text x="769.4000000000001" y="455" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#FFB84F</text>
+<text x="727.4000000000001" y="478" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">1.000 / 0.720 / 0.310</text>
+</g>
+<g id="swatch-signal-carrier" data-token="signal.carrier">
+<rect x="931.2" y="411" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="944.2" y="424" width="32" height="32" rx="7" fill="rgb(100%,73%,34%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="986.2" y="435" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Carrier amber</text>
+<text x="986.2" y="455" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#FFBA57</text>
+<text x="944.2" y="478" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">1.000 / 0.730 / 0.340</text>
+</g>
+<g id="swatch-signal-wavePrimary" data-token="signal.wavePrimary">
+<rect x="64.0" y="505" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="77.0" y="518" width="32" height="32" rx="7" fill="rgb(31%,86%,100%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="119.0" y="529" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Wave primary</text>
+<text x="119.0" y="549" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#4FDBFF</text>
+<text x="77.0" y="572" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.310 / 0.860 / 1.000</text>
+</g>
+<g id="swatch-signal-waveSecondary" data-token="signal.waveSecondary">
+<rect x="280.8" y="505" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="293.8" y="518" width="32" height="32" rx="7" fill="rgb(21%,40%,100%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="335.8" y="529" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Wave depth</text>
+<text x="335.8" y="549" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#3666FF</text>
+<text x="293.8" y="572" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.210 / 0.400 / 1.000</text>
+</g>
+<g id="swatch-signal-spectrumPrimary" data-token="signal.spectrumPrimary">
+<rect x="497.6" y="505" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="510.6" y="518" width="32" height="32" rx="7" fill="rgb(76%,57%,100%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="552.6" y="529" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Spectrum primary</text>
+<text x="552.6" y="549" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#C291FF</text>
+<text x="510.6" y="572" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.760 / 0.570 / 1.000</text>
+</g>
+<g id="swatch-signal-spectrumSecondary" data-token="signal.spectrumSecondary">
+<rect x="714.4000000000001" y="505" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="727.4000000000001" y="518" width="32" height="32" rx="7" fill="rgb(96%,36%,84%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="769.4000000000001" y="529" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Spectrum depth</text>
+<text x="769.4000000000001" y="549" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#F55CD6</text>
+<text x="727.4000000000001" y="572" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.960 / 0.360 / 0.840</text>
+</g>
+<g id="swatch-metal-crownBase" data-token="metal.crownBase">
+<rect x="931.2" y="505" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="944.2" y="518" width="32" height="32" rx="7" fill="rgb(12%,15%,17%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="986.2" y="529" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Crown base</text>
+<text x="986.2" y="549" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#1F262B</text>
+<text x="944.2" y="572" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.120 / 0.150 / 0.170</text>
+</g>
+<g id="swatch-metal-crownRimLight" data-token="metal.crownRimLight">
+<rect x="64.0" y="599" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="77.0" y="612" width="32" height="32" rx="7" fill="rgb(49%,57%,61%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="119.0" y="623" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Crown / rim light</text>
+<text x="119.0" y="643" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#7D919C</text>
+<text x="77.0" y="666" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.490 / 0.570 / 0.610</text>
+</g>
+<g id="swatch-metal-crownRimDark" data-token="metal.crownRimDark">
+<rect x="280.8" y="599" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="293.8" y="612" width="32" height="32" rx="7" fill="rgb(10%,13%,15%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="335.8" y="623" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Crown / rim dark</text>
+<text x="335.8" y="643" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#1A2126</text>
+<text x="293.8" y="666" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.100 / 0.130 / 0.150</text>
+</g>
+<g id="swatch-metal-crownRimMid" data-token="metal.crownRimMid">
+<rect x="497.6" y="599" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="510.6" y="612" width="32" height="32" rx="7" fill="rgb(32%,39%,43%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="552.6" y="623" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Crown / rim mid</text>
+<text x="552.6" y="643" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#52636E</text>
+<text x="510.6" y="666" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.320 / 0.390 / 0.430</text>
+</g>
+<g id="swatch-metal-crownFaceLight" data-token="metal.crownFaceLight">
+<rect x="714.4000000000001" y="599" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="727.4000000000001" y="612" width="32" height="32" rx="7" fill="rgb(27%,33%,37%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="769.4000000000001" y="623" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Crown / face light</text>
+<text x="769.4000000000001" y="643" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#45545E</text>
+<text x="727.4000000000001" y="666" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.270 / 0.330 / 0.370</text>
+</g>
+<g id="swatch-metal-crownFaceDark" data-token="metal.crownFaceDark">
+<rect x="931.2" y="599" width="204.8" height="82" rx="12" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="944.2" y="612" width="32" height="32" rx="7" fill="rgb(8%,11%,13%)" stroke="#FFFFFF" stroke-opacity="0.15" />
+<text x="986.2" y="623" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Crown / face dark</text>
+<text x="986.2" y="643" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">#141C21</text>
+<text x="944.2" y="666" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">0.080 / 0.110 / 0.130</text>
+</g>
+<text x="64" y="716" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">RGB doubles are canonical. Hex approximates 8-bit sRGB; material pixels depend on the OS and backdrop.</text>
+<text x="64" y="760" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="500" fill="#57EDF5" text-anchor="start" letter-spacing="1.4">02 / THREE MATERIAL FAMILIES</text>
+<line x1="64" y1="775" x2="1136" y2="775" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+<g id="material-content">
+<rect x="64" y="789" width="336" height="271" rx="22" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<text x="84" y="822" font-family="Menlo, Monaco, monospace" font-size="13" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.7">CONTENT</text>
+<rect x="88" y="850" width="288" height="89" rx="16" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.09" />
+<text x="106" y="875" font-family="Menlo, Monaco, monospace" font-size="10" font-weight="500" fill="#99B0BA" text-anchor="start" letter-spacing="1.6">TELEMETRY</text>
+<text x="106" y="914" font-family="Menlo, Monaco, monospace" font-size="34" font-weight="400" fill="#57EDF5" text-anchor="start" letter-spacing="0">2.00</text>
+<text x="203" y="912" font-family="Menlo, Monaco, monospace" font-size="16" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Hz</text>
+<line x1="282" y1="870" x2="282" y2="919" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+<text x="297" y="882" font-family="Menlo, Monaco, monospace" font-size="18" font-weight="400" fill="#E8F2F7" text-anchor="start" letter-spacing="0">500</text>
+<text x="297" y="907" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">ms</text>
+<text x="84" y="977" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Quiet surface for actual content</text>
+<text x="84" y="1002" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">22 pt radius · 16 pt inset</text>
+<text x="84" y="1027" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#52E8F5" text-anchor="start" letter-spacing="0">Panel 0.85 · white 0.09 border</text>
+</g>
+<g id="material-metal-instrument">
+<rect x="432" y="789" width="336" height="271" rx="22" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<text x="452" y="822" font-family="Menlo, Monaco, monospace" font-size="13" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.7">METAL INSTRUMENT</text>
+<circle cx="600" cy="901" r="49" fill="#000000" opacity="0.5" />
+<circle cx="600" cy="895" r="48" fill="url(#metal-rim)" />
+<line x1="639.0" y1="895.0" x2="646.0" y2="895.0" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="639.0" y1="895.0" x2="646.0" y2="895.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="638.5198452832103" y1="901.100944136569" x2="645.4336636673763" y2="902.1959853918506" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="638.5198452832103" y1="901.100944136569" x2="645.4336636673763" y2="902.1959853918506" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="637.091204135511" y1="907.0516627806229" x2="643.748599749577" y2="909.2147817412476" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="637.091204135511" y1="907.0516627806229" x2="643.748599749577" y2="909.2147817412476" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="634.7492544433463" y1="912.7056294898423" x2="640.9863001126649" y2="915.8835629880192" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="634.7492544433463" y1="912.7056294898423" x2="640.9863001126649" y2="915.8835629880192" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="631.5516627806229" y1="917.9236248394064" x2="637.2147817412476" y2="922.0381216054537" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="631.5516627806229" y1="917.9236248394064" x2="637.2147817412476" y2="922.0381216054537" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="627.5771644662753" y1="922.5771644662753" x2="632.5269119345812" y2="927.5269119345812" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="627.5771644662753" y1="922.5771644662753" x2="632.5269119345812" y2="927.5269119345812" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="622.9236248394064" y1="926.5516627806229" x2="627.0381216054537" y2="932.2147817412476" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="622.9236248394064" y1="926.5516627806229" x2="627.0381216054537" y2="932.2147817412476" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="617.7056294898423" y1="929.7492544433463" x2="620.8835629880192" y2="935.9863001126649" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="617.7056294898423" y1="929.7492544433463" x2="620.8835629880192" y2="935.9863001126649" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="612.0516627806229" y1="932.091204135511" x2="614.2147817412476" y2="938.748599749577" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="612.0516627806229" y1="932.091204135511" x2="614.2147817412476" y2="938.748599749577" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="606.100944136569" y1="933.5198452832103" x2="607.1959853918506" y2="940.4336636673763" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="606.100944136569" y1="933.5198452832103" x2="607.1959853918506" y2="940.4336636673763" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="600.0" y1="934.0" x2="600.0" y2="941.0" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="600.0" y1="934.0" x2="600.0" y2="941.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="593.899055863431" y1="933.5198452832103" x2="592.8040146081494" y2="940.4336636673763" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="593.899055863431" y1="933.5198452832103" x2="592.8040146081494" y2="940.4336636673763" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="587.9483372193771" y1="932.091204135511" x2="585.7852182587524" y2="938.7485997495771" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="587.9483372193771" y1="932.091204135511" x2="585.7852182587524" y2="938.7485997495771" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="582.2943705101577" y1="929.7492544433463" x2="579.1164370119809" y2="935.9863001126649" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="582.2943705101577" y1="929.7492544433463" x2="579.1164370119809" y2="935.9863001126649" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="577.0763751605936" y1="926.5516627806229" x2="572.9618783945463" y2="932.2147817412476" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="577.0763751605936" y1="926.5516627806229" x2="572.9618783945463" y2="932.2147817412476" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="572.4228355337247" y1="922.5771644662753" x2="567.4730880654188" y2="927.5269119345812" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="572.4228355337247" y1="922.5771644662753" x2="567.4730880654188" y2="927.5269119345812" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="568.4483372193771" y1="917.9236248394064" x2="562.7852182587524" y2="922.0381216054537" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="568.4483372193771" y1="917.9236248394064" x2="562.7852182587524" y2="922.0381216054537" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="565.2507455566537" y1="912.7056294898423" x2="559.0136998873351" y2="915.8835629880192" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="565.2507455566537" y1="912.7056294898423" x2="559.0136998873351" y2="915.8835629880192" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="562.908795864489" y1="907.0516627806229" x2="556.251400250423" y2="909.2147817412476" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="562.908795864489" y1="907.0516627806229" x2="556.251400250423" y2="909.2147817412476" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="561.4801547167897" y1="901.100944136569" x2="554.5663363326237" y2="902.1959853918506" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="561.4801547167897" y1="901.100944136569" x2="554.5663363326237" y2="902.1959853918506" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="561.0" y1="895.0" x2="554.0" y2="895.0" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="561.0" y1="895.0" x2="554.0" y2="895.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="561.4801547167897" y1="888.899055863431" x2="554.5663363326237" y2="887.8040146081494" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="561.4801547167897" y1="888.899055863431" x2="554.5663363326237" y2="887.8040146081494" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="562.908795864489" y1="882.9483372193771" x2="556.2514002504229" y2="880.7852182587525" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="562.908795864489" y1="882.9483372193771" x2="556.2514002504229" y2="880.7852182587525" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="565.2507455566537" y1="877.2943705101577" x2="559.0136998873351" y2="874.1164370119809" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="565.2507455566537" y1="877.2943705101577" x2="559.0136998873351" y2="874.1164370119809" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="568.4483372193771" y1="872.0763751605936" x2="562.7852182587524" y2="867.9618783945463" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="568.4483372193771" y1="872.0763751605936" x2="562.7852182587524" y2="867.9618783945463" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="572.4228355337247" y1="867.4228355337247" x2="567.4730880654188" y2="862.4730880654188" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="572.4228355337247" y1="867.4228355337247" x2="567.4730880654188" y2="862.4730880654188" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="577.0763751605936" y1="863.4483372193771" x2="572.9618783945463" y2="857.7852182587524" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="577.0763751605936" y1="863.4483372193771" x2="572.9618783945463" y2="857.7852182587524" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="582.2943705101577" y1="860.2507455566537" x2="579.1164370119808" y2="854.0136998873351" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="582.2943705101577" y1="860.2507455566537" x2="579.1164370119808" y2="854.0136998873351" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="587.9483372193771" y1="857.908795864489" x2="585.7852182587524" y2="851.251400250423" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="587.9483372193771" y1="857.908795864489" x2="585.7852182587524" y2="851.251400250423" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="593.899055863431" y1="856.4801547167897" x2="592.8040146081494" y2="849.5663363326237" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="593.899055863431" y1="856.4801547167897" x2="592.8040146081494" y2="849.5663363326237" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="600.0" y1="856.0" x2="600.0" y2="849.0" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="600.0" y1="856.0" x2="600.0" y2="849.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="606.100944136569" y1="856.4801547167897" x2="607.1959853918506" y2="849.5663363326237" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="606.100944136569" y1="856.4801547167897" x2="607.1959853918506" y2="849.5663363326237" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="612.0516627806229" y1="857.908795864489" x2="614.2147817412475" y2="851.2514002504229" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="612.0516627806229" y1="857.908795864489" x2="614.2147817412475" y2="851.2514002504229" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="617.7056294898423" y1="860.2507455566537" x2="620.8835629880191" y2="854.0136998873351" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="617.7056294898423" y1="860.2507455566537" x2="620.8835629880191" y2="854.0136998873351" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="622.9236248394064" y1="863.4483372193771" x2="627.0381216054537" y2="857.7852182587524" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="622.9236248394064" y1="863.4483372193771" x2="627.0381216054537" y2="857.7852182587524" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="627.5771644662753" y1="867.4228355337247" x2="632.5269119345812" y2="862.4730880654188" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="627.5771644662753" y1="867.4228355337247" x2="632.5269119345812" y2="862.4730880654188" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="631.5516627806229" y1="872.0763751605936" x2="637.2147817412476" y2="867.9618783945463" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="631.5516627806229" y1="872.0763751605936" x2="637.2147817412476" y2="867.9618783945463" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="634.7492544433463" y1="877.2943705101577" x2="640.9863001126649" y2="874.1164370119808" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="634.7492544433463" y1="877.2943705101577" x2="640.9863001126649" y2="874.1164370119808" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="637.091204135511" y1="882.9483372193771" x2="643.748599749577" y2="880.7852182587524" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="637.091204135511" y1="882.9483372193771" x2="643.748599749577" y2="880.7852182587524" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<line x1="638.5198452832103" y1="888.8990558634309" x2="645.4336636673763" y2="887.8040146081494" stroke="#000000" stroke-opacity="0.65" stroke-width="1.7" />
+<line x1="638.5198452832103" y1="888.8990558634309" x2="645.4336636673763" y2="887.8040146081494" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.45" />
+<circle cx="600" cy="895" r="34" fill="url(#metal-face)" stroke="#FFFFFF" stroke-opacity=".31" stroke-width=".7" />
+<circle cx="600" cy="895" r="24" fill="none" stroke="#FFFFFF" stroke-opacity=".06" stroke-width=".5" />
+<circle cx="600" cy="895" r="27" fill="none" stroke="#FFFFFF" stroke-opacity=".06" stroke-width=".5" />
+<circle cx="600" cy="895" r="30" fill="none" stroke="#FFFFFF" stroke-opacity=".06" stroke-width=".5" />
+<line x1="600" y1="870" x2="600" y2="877" stroke="#52E8F5" stroke-opacity="1" stroke-width="2.5" />
+<text x="600" y="904" font-family="Menlo, Monaco, monospace" font-size="25" font-weight="500" fill="#E8F2F7" text-anchor="middle" letter-spacing="0">1</text>
+<text x="452" y="977" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Solid face with calibrated detail</text>
+<text x="452" y="1002" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">40 knurls · fine directional light</text>
+<text x="452" y="1027" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#52E8F5" text-anchor="start" letter-spacing="0">Housing shadow: 22 pt / y 16</text>
+</g>
+<g id="material-native-glass">
+<rect x="800" y="789" width="336" height="271" rx="22" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<text x="820" y="822" font-family="Menlo, Monaco, monospace" font-size="13" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.7">NATIVE GLASS</text>
+<circle cx="968" cy="895" r="49" fill="#070A0E" />
+<line x1="1007.0" y1="895.0" x2="1013.0" y2="895.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="1001.7749907475932" y1="914.5" x2="1006.9711431702997" y2="917.5" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="987.5" y1="928.7749907475932" x2="990.5" y2="933.9711431702997" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="968.0" y1="934.0" x2="968.0" y2="940.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="948.5" y1="928.7749907475932" x2="945.5" y2="933.9711431702997" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="934.2250092524068" y1="914.5" x2="929.0288568297003" y2="917.5" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="929.0" y1="895.0" x2="923.0" y2="895.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="934.2250092524068" y1="875.5" x2="929.0288568297003" y2="872.5" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="948.5" y1="861.225009252407" x2="945.5" y2="856.0288568297003" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="968.0" y1="856.0" x2="968.0" y2="850.0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="987.5" y1="861.2250092524068" x2="990.5" y2="856.0288568297003" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<line x1="1001.774990747593" y1="875.5" x2="1006.9711431702997" y2="872.5" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8" />
+<circle cx="968" cy="895" r="47" fill="url(#lens-schematic)" stroke="#FFFFFF" stroke-opacity=".17" stroke-width=".9" />
+<path d="M933 868 A44 44 0 0 1 988 856" fill="none" stroke="url(#edge-light)" stroke-width="1" />
+<text x="968" y="904" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" font-weight="300" fill="#E8F2F7" text-anchor="middle" letter-spacing="0">120</text>
+<text x="820" y="977" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Native controls + isolated clear lens</text>
+<text x="820" y="1002" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Lens opacity stays at 0.48</text>
+<text x="820" y="1027" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#52E8F5" text-anchor="start" letter-spacing="0">SCHEMATIC — not native rendering</text>
+</g>
+<text x="64" y="1115" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="500" fill="#57EDF5" text-anchor="start" letter-spacing="1.4">03 / LAYER OWNERSHIP / FIXED FOREGROUND</text>
+<line x1="64" y1="1130" x2="1136" y2="1130" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+<g id="layer-architecture">
+<rect x="64" y="1144" width="1072" height="325" rx="22" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<rect x="94" y="1185" width="430" height="60" rx="12" fill="#05080B" stroke="#FFFFFF" stroke-opacity="0.04" />
+<rect x="88" y="1180" width="430" height="60" rx="12" fill="#0B1216" stroke="#E8F2F7" stroke-opacity="0.2" />
+<text x="182" y="1207" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0.8">FIXED READOUT</text>
+<text x="108" y="1222" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" font-weight="300" fill="#E8F2F7" text-anchor="start" letter-spacing="0">120</text>
+<text x="182" y="1226" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Values · units · human meaning</text>
+<rect x="94" y="1265" width="430" height="60" rx="12" fill="#05080B" stroke="#FFFFFF" stroke-opacity="0.04" />
+<rect x="88" y="1260" width="430" height="60" rx="12" fill="url(#lens-schematic)" stroke="#52E8F5" stroke-opacity="0.2" />
+<text x="182" y="1287" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="500" fill="#52E8F5" text-anchor="start" letter-spacing="0.8">NATIVE CLEAR GLASS</text>
+<ellipse cx="123" cy="1290" rx="19" ry="19" fill="url(#lens-schematic)" stroke="#FFFFFF" stroke-opacity=".20" />
+<text x="182" y="1306" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">SCHEMATIC / constant opacity</text>
+<rect x="94" y="1345" width="430" height="60" rx="12" fill="#05080B" stroke="#FFFFFF" stroke-opacity="0.04" />
+<rect x="88" y="1340" width="430" height="60" rx="12" fill="#0B1216" stroke="#FFB84F" stroke-opacity="0.2" />
+<text x="182" y="1367" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="500" fill="#FFB84F" text-anchor="start" letter-spacing="0.8">DECORATIVE CANVAS</text>
+<path d="M108 1384L123 1355L139 1384" fill="none" stroke="#FFB84F" stroke-width="1.2" />
+<line x1="105" y1="1389" x2="143" y2="1389" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="0.7" />
+<text x="182" y="1386" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Metal · scale · mechanism</text>
+<path d="M553 1387V1201" fill="none" stroke="#99B0BA" stroke-opacity=".45" stroke-width="1" marker-end="url(#up-arrow)" />
+<text x="609" y="1203" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Foreground remains anchored</text>
+<text x="609" y="1226" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Readout and controls receive no sensor transform.</text>
+<text x="609" y="1283" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Glass is a separate native sibling</text>
+<text x="609" y="1306" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Frame first; native clear material; centered radius.</text>
+<text x="609" y="1363" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#E8F2F7" text-anchor="start" letter-spacing="0">Optics touch decorative ink only</text>
+<text x="609" y="1386" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Bounded warp + diagonal RGB sampling.</text>
+<text x="609" y="1407" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Clear face with faint edge-only reflection.</text>
+<text x="88" y="1444" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Static schematic layers. The native glass appearance must be checked in the destination app.</text>
+</g>
+<text x="64" y="1523" font-family="Menlo, Monaco, monospace" font-size="12" font-weight="500" fill="#57EDF5" text-anchor="start" letter-spacing="1.4">04 / COMPACT INTERACTION CONTRACTS</text>
+<line x1="64" y1="1538" x2="1136" y2="1538" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+<g id="contract-touch-ownership">
+<rect x="64" y="1552" width="336" height="96" rx="16" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<circle cx="83" cy="1575" r="3" fill="#52E8F5" />
+<text x="95" y="1579" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.5">TOUCH OWNERSHIP</text>
+<text x="82" y="1606" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">A control owns its complete touch.</text>
+<text x="82" y="1627" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Off-control contact may scroll.</text>
+</g>
+<g id="contract-fixed-frames">
+<rect x="432" y="1552" width="336" height="96" rx="16" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<circle cx="451" cy="1575" r="3" fill="#FFB84F" />
+<text x="463" y="1579" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.5">FIXED FRAMES</text>
+<text x="450" y="1606" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Readouts and buttons stay still.</text>
+<text x="450" y="1627" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Sensors affect decorative drawing.</text>
+</g>
+<g id="contract-authoritative-motion">
+<rect x="800" y="1552" width="336" height="96" rx="16" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<circle cx="819" cy="1575" r="3" fill="#C291FF" />
+<text x="831" y="1579" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.5">AUTHORITATIVE MOTION</text>
+<text x="818" y="1606" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Sample acknowledged domain phase.</text>
+<text x="818" y="1627" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Avoid an independent playback timer.</text>
+</g>
+<g id="contract-static-signal-enclosures">
+<rect x="64" y="1664" width="336" height="96" rx="16" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<circle cx="83" cy="1687" r="3" fill="#52E8F5" />
+<text x="95" y="1691" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.5">STATIC SIGNAL ENCLOSURES</text>
+<text x="82" y="1718" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Change interior energy geometry.</text>
+<text x="82" y="1739" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Keep pill borders and labels constant.</text>
+</g>
+<g id="contract-accessible-alternatives">
+<rect x="432" y="1664" width="336" height="96" rx="16" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<circle cx="451" cy="1687" r="3" fill="#FFB84F" />
+<text x="463" y="1691" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.5">ACCESSIBLE ALTERNATIVES</text>
+<text x="450" y="1718" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Honor Reduce Motion / Transparency.</text>
+<text x="450" y="1739" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Offer native +/− and spoken values.</text>
+</g>
+<g id="contract-accepted-feedback">
+<rect x="800" y="1664" width="336" height="96" rx="16" fill="#0B1216" stroke="#FFFFFF" stroke-opacity="0.08" />
+<circle cx="819" cy="1687" r="3" fill="#C291FF" />
+<text x="831" y="1691" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="600" fill="#E8F2F7" text-anchor="start" letter-spacing="0.5">ACCEPTED FEEDBACK</text>
+<text x="818" y="1718" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">One accepted adjustment, one event.</text>
+<text x="818" y="1739" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">Bound detents; discard stale input.</text>
+</g>
+<line x1="64" y1="1811" x2="1136" y2="1811" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+<text x="64" y="1841" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0">CURRENT: Metro Station build 14. Recommended adoption improvements are identified in the specification.</text>
+<text x="64" y="1868" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="start" letter-spacing="0.35">STATIC VECTOR ATLAS · Glass is schematic · No native runtime or physical-feedback proof</text>
+<text x="1136" y="1868" font-family="Menlo, Monaco, monospace" font-size="11" font-weight="400" fill="#99B0BA" text-anchor="end" letter-spacing="0">1.0</text>
+</svg>

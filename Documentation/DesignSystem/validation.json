@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "edition": "1.0",
+  "checkedDate": "2026-10-12",
+  "sourceBaseline": {
+    "app": "Metro Station",
+    "build": 14,
+    "frozenSourceConfigurationFiles": 49,
+    "unchangedAgainstFrozenSHA256": true
+  },
+  "checks": {
+    "swift": {
+      "result": "passed",
+      "exitCode": 0,
+      "mode": "typecheck",
+      "languageMode": "Swift 6",
+      "target": "arm64-apple-ios26.0",
+      "sdk": "iPhoneOS27.0",
+      "files": [
+        "InstrumentDesignSystem.swift",
+        "InstrumentControlTouchBoundary.swift",
+        "LensRefraction.swift",
+        "UsageExample.swift"
+      ]
+    },
+    "metal": {
+      "compileResult": "passed",
+      "compileExitCode": 0,
+      "linkResult": "passed",
+      "linkExitCode": 0,
+      "target": "air64-apple-ios26.0",
+      "entryPoint": "instrumentLensOptics"
+    },
+    "tokens": {
+      "jsonValid": true,
+      "canonicalRGBHexApproximationPairs": 25,
+      "mismatches": 0
+    },
+    "atlas": {
+      "svgXMLValid": true,
+      "embeddedColorsMatchManifest": true,
+      "pngWidth": 1200,
+      "pngHeight": 1900,
+      "renderer": "sharp 0.35.5 with librsvg 2.63.2",
+      "visuallyInspected": true,
+      "observedClippingOrOverlap": false,
+      "glassRendering": "schematic"
+    },
+    "documentation": {
+      "numberedSections": 22,
+      "approximateWhitespaceWordCount": 8158,
+      "fencesPaired": true,
+      "localLinksResolve": true
+    }
+  },
+  "scope": "Compile-checked portable visual starter and specification. No separate installed-example runtime, continuous frame-pacing, accessibility or physical feedback certification.",
+  "hashCoverage": "Payload files only; excludes this validation record and ZIP archive.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4065,
+      "sha256": "aa316733efa614514b8e35d1a5d6ea8c33f5731d33d31f299180407a38ef7d74"
+    },
+    {
+      "path": "MetroStationDesignSystem.md",
+      "bytes": 54360,
+      "sha256": "2adbd5e5501b00d49e18a44ba83914777337df4355b9367ad066be1f3b986ad0"
+    },
+    {
+      "path": "design-tokens.json",
+      "bytes": 13093,
+      "sha256": "82334c294175bfa87333191332facc75c92c8fc11c221160cb45dad2158f0d20"
+    },
+    {
+      "path": "InstrumentDesignSystem.swift",
+      "bytes": 16466,
+      "sha256": "2a93b254dd41b4e82c71789d3162d3e8637c0233896892ddaef2ca9537bbbb6d"
+    },
+    {
+      "path": "InstrumentControlTouchBoundary.swift",
+      "bytes": 7753,
+      "sha256": "23f74fc8111fc6971a13580fd73a61f4206e401b21d2d84cbb4f2fb6931e016a"
+    },
+    {
+      "path": "LensRefraction.swift",
+      "bytes": 6445,
+      "sha256": "d19d71cabdd811081609fa276e215196b547b52fa32523d3fc9a9fcdabe174fe"
+    },
+    {
+      "path": "UsageExample.swift",
+      "bytes": 7142,
+      "sha256": "4f29e02cbb56bcebede404a46ae79ea7d8ea6389850ffb3dac1cb92f67dac363"
+    },
+    {
+      "path": "InstrumentLensOptics.metal",
+      "bytes": 2188,
+      "sha256": "36bcf2e1c3c14cfe725cd1c42c5bd0505c0921392caada2c644f5253d85e351e"
+    },
+    {
+      "path": "VisualReference.svg",
+      "bytes": 59556,
+      "sha256": "f58dd2abf3a44852e4e1e32dbf453c8e7d6b7c2ca42e0eae5b2cf2030f091a71"
+    },
+    {
+      "path": "VisualReference.png",
+      "bytes": 371057,
+      "sha256": "db942c8df6e668168ab75f49f2e708a3ea671012fc9ba8edd2bbf3b62a5ced0f"
+    }
+  ]
+}

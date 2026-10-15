@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Sea Glass — Metro Station Material Study</title>
+  <link rel="stylesheet" href="study.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>METRO STATION <small>MATERIAL LAB</small></span></a>
+      <div class="header-tools"><span class="edition">STUDY 001 <b>•</b> OCT 2026</span><div class="theme-switch" role="group" aria-label="Workbench appearance"><button type="button" class="is-active" data-theme="dark" aria-pressed="true">Dark</button><button type="button" data-theme="light" aria-pressed="false">Mineral</button></div></div>
+    </header>
+
+    <main id="main">
+      <section class="introduction" aria-labelledby="page-title">
+        <div><p class="eyebrow"><span class="status-dot"></span> A NEW MATERIAL FOR METRO</p><h1 id="page-title">Sea Glass<span class="title-period">.</span></h1></div>
+        <div class="intro-copy"><p>Light, softened.<br>Color, held at the edges.</p><span>A satin surface shaped by diffusion, gentle depth,<br class="desktop-break"> and the smallest trace of light.</span></div>
+      </section>
+
+      <div class="workbench">
+        <section class="specimen-panel" aria-label="Sea glass material preview">
+          <div class="specimen-topline"><span class="micro">01 / LIVE SPECIMEN</span><span class="micro context-label">DARK INSTRUMENT ENVIRONMENT</span></div>
+          <div class="specimen-stage" id="specimen-stage" data-backdrop="signal">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <svg class="signal-backdrop" viewBox="0 0 900 500" preserveAspectRatio="none" aria-hidden="true"><path class="signal signal-a" d="M-20 350 C190 350 170 100 370 170 S590 400 930 130"/><path class="signal signal-b" d="M-20 390 C220 390 160 160 400 205 S650 410 930 180"/><path class="signal signal-c" d="M-20 430 C220 430 240 210 420 250 S650 440 930 220"/><path class="signal signal-d" d="M-20 470 C250 470 260 280 440 300 S660 470 930 280"/></svg>
+            <div class="spectrum-backdrop" aria-hidden="true"></div>
+            <div class="specimen-datum datum-left" aria-hidden="true">A <span>+</span></div><div class="specimen-datum datum-right" aria-hidden="true"><span>+</span> B</div>
+            <div class="specimen-assembly">
+              <div class="glass-body hero-glass" aria-hidden="true"><div class="glass-grain"></div><div class="glass-rim"></div></div>
+              <div class="specimen-ink">
+                <div class="specimen-label"><span class="sample-code">SG / 01</span><span class="sample-name">TIDE</span></div>
+                <div class="hero-type">Quietly<br><em>luminous.</em></div>
+                <div class="specimen-footer"><span>FROSTED · TINTED · TACTILE</span><span class="light-indicator" aria-label="Directional light"><i></i></span></div>
+              </div>
+            </div>
+            <div class="stage-annotation"><span class="annotation-rule"></span><span>Soft transmission. Crisp, anchored ink.</span></div>
+          </div>
+          <div class="specimen-bottomline"><span><i class="small-cross" aria-hidden="true">+</i> MOVE ACROSS THE SURFACE TO STEER LIGHT</span><span id="surface-mode">SURFACE APPROXIMATION</span></div>
+        </section>
+
+        <aside class="control-panel" aria-label="Material controls">
+          <div class="panel-heading"><div><p class="eyebrow">MATERIAL RECIPE</p><h2>Find the feeling.</h2></div><button class="reset-button" id="reset" type="button" aria-label="Reset material recipe" title="Reset material recipe">↺</button></div>
+          <fieldset class="tint-picker"><legend>TINT <span id="tint-label">Tide</span></legend><div class="tint-options"><button type="button" class="tint-button is-active" data-tint="tide" aria-label="Tide tint" aria-pressed="true"><span class="swatch swatch-tide"></span><small>Tide</small></button><button type="button" class="tint-button" data-tint="kelp" aria-label="Kelp tint" aria-pressed="false"><span class="swatch swatch-kelp"></span><small>Kelp</small></button><button type="button" class="tint-button" data-tint="amber" aria-label="Amber tint" aria-pressed="false"><span class="swatch swatch-amber"></span><small>Amber</small></button><button type="button" class="tint-button" data-tint="violet" aria-label="Violet tint" aria-pressed="false"><span class="swatch swatch-violet"></span><small>Violet</small></button><button type="button" class="tint-button" data-tint="frost" aria-label="Frost tint" aria-pressed="false"><span class="swatch swatch-frost"></span><small>Frost</small></button></div></fieldset>
+          <div class="range-control"><label for="frost">Frost <output aria-live="off" for="frost" id="frost-value">64<span>/ 100</span></output></label><input id="frost" type="range" min="0" max="100" step="1" value="64"><div class="range-endpoints"><span>Clearer</span><span>More diffuse</span></div></div>
+          <div class="range-control"><label for="depth">Depth <output aria-live="off" for="depth" id="depth-value">55<span>/ 100</span></output></label><input id="depth" type="range" min="0" max="100" step="1" value="55"><div class="range-endpoints"><span>Thin edge</span><span>Dense edge</span></div></div>
+          <div class="range-control"><label for="light">Light angle <output aria-live="off" for="light" id="light-value">315<span>°</span></output></label><input id="light" type="range" min="0" max="359" step="1" value="315"><div class="range-endpoints"><span>Directional rim only</span><label class="inline-check"><input id="pointer-light" type="checkbox" checked> Pointer</label></div></div>
+          <div class="control-divider"></div>
+          <div class="backdrop-control"><label for="backdrop">Behind the glass</label><select id="backdrop"><option value="signal">Signal traces</option><option value="grid">Calibration grid</option><option value="spectrum">Color fields</option><option value="plain">Quiet surface</option></select></div>
+          <label class="toggle-row" for="reduce-transparency"><span>Reduce transparency<small>Opaque material fallback</small></span><input class="switch-input" id="reduce-transparency" type="checkbox"><span class="switch-track" aria-hidden="true"></span></label>
+          <p class="recipe-note" id="recipe-note">Frost and depth are artistic indices, not physical measurements. This study approximates a surface.</p>
+        </aside>
+      </div>
+
+      <section class="application-section" aria-labelledby="application-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / IN CONTEXT</p><h2 id="application-title">A material with a purpose.</h2></div><p>Use it for a focused control or instrument lens.<br>Let the rest of the interface stay quiet.</p></div>
+        <div class="component-grid">
+          <article class="component-card"><div class="component-topline"><span class="micro">A / INTERACTION</span><span class="micro">44 PX MIN</span></div><div class="action-example"><button class="sea-action" id="activate" type="button" aria-pressed="false"><span class="glass-body" aria-hidden="true"><span class="glass-grain"></span><span class="glass-rim"></span></span><span class="button-content"><span class="play-icon" aria-hidden="true">▶</span><span id="activate-label">Activate surface</span></span></button><button class="sea-action disabled-action" type="button" disabled><span>Unavailable</span></button></div><div class="component-caption"><h3>Soft surface. Clear action.</h3><p id="action-status" role="status">Ready · press to see the accepted state.</p></div></article>
+          <article class="component-card"><div class="component-topline"><span class="micro">B / SELECTION</span><span class="micro">STABLE GEOMETRY</span></div><div class="segmented-example" role="group" aria-label="Material intent"><div class="glass-body" aria-hidden="true"><span class="glass-grain"></span><span class="glass-rim"></span></div><button type="button" class="is-active" aria-pressed="true" data-intent="Surface">Surface</button><button type="button" aria-pressed="false" data-intent="Control">Control</button><button type="button" aria-pressed="false" data-intent="Lens">Lens</button></div><div class="component-caption"><h3>Ink stays above the optics.</h3><p id="intent-status">Surface · a calm, tactile plane.</p></div></article>
+          <article class="component-card"><div class="component-topline"><span class="micro">C / ANATOMY</span><span class="micro">FOUR QUIET LAYERS</span></div><div class="layer-stack" aria-hidden="true"><i class="layer layer-shadow"></i><i class="layer layer-tint"></i><i class="layer layer-frost"></i><i class="layer layer-ink">Aa <span>↗</span></i></div><div class="component-caption"><h3>Depth lives at the boundary.</h3><p>Contact shadow / tinted body / satin grain / ink.</p></div></article>
+        </div>
+      </section>
+
+      <section class="token-bar" aria-labelledby="tokens-title"><div><p class="eyebrow" id="tokens-title">CURRENT RECIPE</p><code id="recipe-summary">tide · frost 64 · depth 55 · light 315°</code></div><div class="token-actions"><span id="copy-status" role="status"></span><button class="text-button" id="copy-tokens" type="button">Copy CSS recipe <span aria-hidden="true">↗</span></button></div></section>
+      <details class="implementation-notes"><summary>What this material is made of <span aria-hidden="true">+</span></summary><p>Backdrop diffusion, a low-opacity tinted body, static fine grain, soft contact shadow, denser inset edges and a narrow directional rim. The label, hit targets and values are independent of the decorative material. There is no physical refraction solver in this study.</p><p>In Metro Station, sea glass is a deliberate satin alternative for a control or isolated lens. Keep supporting panels opaque; retain semantic cyan, amber and violet signals independently of the chosen surface tint. Do not infer a live measurement from the decorative traces.</p></details>
+    </main>
+    <footer class="page-footer"><span>METRO STATION <b>×</b> SEA GLASS</span><span>EXPERIMENT 001 · LOCAL MATERIAL STUDY</span></footer>
+  </div>
+  <script src="study.js"></script>
+</body>
+</html>
